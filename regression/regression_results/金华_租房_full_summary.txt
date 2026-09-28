@@ -1,0 +1,38 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            total_price   R-squared:                       0.644
+Model:                            OLS   Adj. R-squared:                  0.643
+Method:                 Least Squares   F-statistic:                     229.7
+Date:                Wed, 15 Jul 2026   Prob (F-statistic):               0.00
+Time:                        00:36:01   Log-Likelihood:                -736.96
+No. Observations:                2726   AIC:                             1500.
+Df Residuals:                    2713   BIC:                             1577.
+Df Model:                          12                                         
+Covariance Type:                  HC3                                         
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 6.1336      0.233     26.378      0.000       5.678       6.589
+area                  0.0082      0.000     28.512      0.000       0.008       0.009
+house_age            -0.0116      0.001    -13.306      0.000      -0.013      -0.010
+district_兰溪          -0.0989      0.027     -3.649      0.000      -0.152      -0.046
+district_婺城          -0.1951      0.020     -9.551      0.000      -0.235      -0.155
+district_永康           0.0387      0.026      1.479      0.139      -0.013       0.090
+district_金东          -0.3077      0.022    -14.067      0.000      -0.351      -0.265
+floor_type_低层        -0.0115      0.016     -0.704      0.482      -0.043       0.020
+floor_type_未知        -0.2242      0.039     -5.759      0.000      -0.301      -0.148
+floor_type_高层         0.0337      0.013      2.662      0.008       0.009       0.058
+decoration_精装修        0.9332      0.227      4.109      0.000       0.488       1.378
+property_type_别墅      0.0473      0.075      0.627      0.530      -0.100       0.195
+property_type_商住楼    -0.0575      0.025     -2.306      0.021      -0.106      -0.009
+==============================================================================
+Omnibus:                      669.542   Durbin-Watson:                   2.002
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            22257.228
+Skew:                          -0.469   Prob(JB):                         0.00
+Kurtosis:                      16.967   Cond. No.                     5.74e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 5.74e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
